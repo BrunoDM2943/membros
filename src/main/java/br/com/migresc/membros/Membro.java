@@ -1,5 +1,7 @@
 package br.com.migresc.membros;
 
+import java.time.LocalDate;
+
 /**
  * Classe Membro
  * @author bruno
@@ -7,23 +9,6 @@ package br.com.migresc.membros;
  */
 public final class Membro {
 
-    /**
-     * Nome do membro
-     */
-    private String nome;
 
-    /**
-     * @return the nome
-     */
-    public final String getNome() {
-        return nome;
-    }
-
-    /**
-     * @param nome the nome to set
-     */
-    public final void setNome(String nome) {
-        this.nome = nome;
-    }
 
 }

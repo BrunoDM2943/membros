@@ -9,9 +9,6 @@ public class PrimaryTest {
 
     @Test
     public void test(){
-        Membro membro = new Membro();
-        membro.setNome("Bruno");
-        assertEquals("Bruno", membro.getNome());
     }
 
 }
