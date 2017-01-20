@@ -68,6 +68,11 @@ public class Pessoa {
      */
     private Set<Pessoa> filhos;
 
+    /**
+     * Estado civil
+     */
+    private EstadoCivil estadoCivil;
+
 
 
 
