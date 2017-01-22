@@ -137,4 +137,18 @@ public class Endereco {
     public void setUf(String uf) {
         this.uf = uf;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Endereco{");
+        sb.append("logradouro='").append(logradouro).append('\'');
+        sb.append(", numero=").append(numero);
+        sb.append(", cep=").append(cep);
+        sb.append(", observacao='").append(observacao).append('\'');
+        sb.append(", bairro='").append(bairro).append('\'');
+        sb.append(", cidade='").append(cidade).append('\'');
+        sb.append(", uf='").append(uf).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }

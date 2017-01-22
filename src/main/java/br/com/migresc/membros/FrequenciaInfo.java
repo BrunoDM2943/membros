@@ -81,4 +81,15 @@ public class FrequenciaInfo {
     public void setFrequentaCultoDomingo(boolean frequentaCultoDomingo) {
         this.frequentaCultoDomingo = frequentaCultoDomingo;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("FrequenciaInfo{");
+        sb.append("frequentaCultoOracao=").append(frequentaCultoOracao);
+        sb.append(", frequentaCultoSabado=").append(frequentaCultoSabado);
+        sb.append(", frequentaCultoEBD=").append(frequentaCultoEBD);
+        sb.append(", frequentaCultoDomingo=").append(frequentaCultoDomingo);
+        sb.append('}');
+        return sb.toString();
+    }
 }

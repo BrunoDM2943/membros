@@ -1,5 +1,7 @@
 package br.com.migresc.membros;
 
+import org.springframework.data.annotation.Id;
+
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
@@ -10,6 +12,9 @@ import java.util.Set;
  *
  */
 public final class Membro {
+
+    @Id
+    private int id;
 
     /**
      * Pessoa
@@ -313,5 +318,43 @@ public final class Membro {
      */
     public void setSugestoes(String sugestoes) {
         this.sugestoes = sugestoes;
+    }
+
+    /**
+     * @return id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Atribui o campo id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Membro{");
+        sb.append("id=").append(id);
+        sb.append(", pessoa=").append(pessoa);
+        sb.append(", religiaoQuandoNasceu='").append(religiaoQuandoNasceu).append('\'');
+        sb.append(", dtAceitacaoJesus=").append(dtAceitacaoJesus);
+        sb.append(", batizado=").append(batizado);
+        sb.append(", dtBatismo=").append(dtBatismo);
+        sb.append(", localBatismo='").append(localBatismo).append('\'');
+        sb.append(", idadeConheceuJesus=").append(idadeConheceuJesus);
+        sb.append(", batismoCatolico=").append(batismoCatolico);
+        sb.append(", veioDeOutraIgreja=").append(veioDeOutraIgreja);
+        sb.append(", igrejaOrigem='").append(igrejaOrigem).append('\'');
+        sb.append(", cargosExercidosIgrejaOrigem='").append(cargosExercidosIgrejaOrigem).append('\'');
+        sb.append(", frequenciaInfo=").append(frequenciaInfo);
+        sb.append(", dizimoInfo=").append(dizimoInfo);
+        sb.append(", listaFuncoesExercidas=").append(listaFuncoesExercidas);
+        sb.append(", listaFuncoesDesejadas=").append(listaFuncoesDesejadas);
+        sb.append(", sugestoes='").append(sugestoes).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

@@ -63,4 +63,14 @@ public class DizimoInfo {
     public void setDizimista(boolean dizimista) {
         this.dizimista = dizimista;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("DizimoInfo{");
+        sb.append("conheceDoutrina=").append(conheceDoutrina);
+        sb.append(", concordaDoutrina=").append(concordaDoutrina);
+        sb.append(", dizimista=").append(dizimista);
+        sb.append('}');
+        return sb.toString();
+    }
 }

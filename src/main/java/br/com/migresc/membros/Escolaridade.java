@@ -20,13 +20,6 @@ public class Escolaridade {
      */
     private String curso;
 
-    /**
-     * Nivel de escolaridade
-     */
-    public static enum Nivel{
-        FUNDAMENTAL, MEDIO, SUPERIOR, POS
-    }
-
     public Escolaridade(Nivel nivel, boolean completo){
         this.nivel = nivel;
         this.completo = completo;
@@ -74,4 +67,20 @@ public class Escolaridade {
         this.curso = curso;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Escolaridade{");
+        sb.append("nivel=").append(nivel);
+        sb.append(", completo=").append(completo);
+        sb.append(", curso='").append(curso).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
+
+    /**
+     * Nivel de escolaridade
+     */
+    public enum Nivel {
+        FUNDAMENTAL, MEDIO, SUPERIOR, POS
+    }
 }

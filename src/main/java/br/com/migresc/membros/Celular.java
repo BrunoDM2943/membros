@@ -22,6 +22,9 @@ public class Celular {
      */
     private int numero2;
 
+    /**
+     * Operadora
+     */
     private Operadora operadora;
 
 
@@ -62,4 +65,21 @@ public class Celular {
         return numero2;
     }
 
+    /**
+     * @return operadora
+     */
+    public Operadora getOperadora() {
+        return operadora;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Celular{");
+        sb.append("ddd=").append(ddd);
+        sb.append(", numero1=").append(numero1);
+        sb.append(", numero2=").append(numero2);
+        sb.append(", operadora=").append(operadora);
+        sb.append('}');
+        return sb.toString();
+    }
 }

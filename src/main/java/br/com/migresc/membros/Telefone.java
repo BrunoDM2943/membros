@@ -59,4 +59,13 @@ public class Telefone {
         return numero2;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Telefone{");
+        sb.append("ddd=").append(ddd);
+        sb.append(", numero1=").append(numero1);
+        sb.append(", numero2=").append(numero2);
+        sb.append('}');
+        return sb.toString();
+    }
 }
