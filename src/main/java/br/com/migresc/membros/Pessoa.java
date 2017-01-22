@@ -77,6 +77,60 @@ public class Pessoa {
      * Estado civil
      */
     private EstadoCivil estadoCivil;
+    /**
+     * Sexo
+     */
+    private Sexo sexo;
+    /**
+     * CPF
+     */
+    private String cpf;
+    /**
+     * RG
+     */
+    private String rg;
+
+    /**
+     * @return sexo
+     */
+    public Sexo getSexo() {
+        return sexo;
+    }
+
+    /**
+     * Atribui o campo sexo
+     */
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
+    }
+
+    /**
+     * @return cpf
+     */
+    public String getCpf() {
+        return cpf;
+    }
+
+    /**
+     * Atribui o campo cpf
+     */
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    /**
+     * @return rg
+     */
+    public String getRg() {
+        return rg;
+    }
+
+    /**
+     * Atribui o campo rg
+     */
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
 
     /**
      * @return id
@@ -272,5 +326,29 @@ public class Pessoa {
      */
     public void setEstadoCivil(EstadoCivil estadoCivil) {
         this.estadoCivil = estadoCivil;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Pessoa{");
+        sb.append("id=").append(id);
+        sb.append(", nome='").append(nome).append('\'');
+        sb.append(", dtNascimento=").append(dtNascimento);
+        sb.append(", dtCasamento=").append(dtCasamento);
+        sb.append(", convivente=").append(convivente);
+        sb.append(", endereco=").append(endereco);
+        sb.append(", localNascimento=").append(localNascimento);
+        sb.append(", profissao='").append(profissao).append('\'');
+        sb.append(", escolaridade=").append(escolaridade);
+        sb.append(", pai=").append(pai);
+        sb.append(", mae=").append(mae);
+        sb.append(", irmaos=").append(irmaos);
+        sb.append(", filhos=").append(filhos);
+        sb.append(", estadoCivil=").append(estadoCivil);
+        sb.append(", sexo=").append(sexo);
+        sb.append(", cpf='").append(cpf).append('\'');
+        sb.append(", rg='").append(rg).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

@@ -8,93 +8,95 @@ import java.util.Set;
 
 /**
  * Classe Membro
- * @author bruno
  *
+ * @author bruno
  */
 public final class Membro {
 
     @Id
     private int id;
-
+    /**
+     * Flag para marcar se um membro é ativo ou inativo.
+     */
+    private boolean ativo;
     /**
      * Pessoa
      */
     private Pessoa pessoa;
-
     /**
      * Religiao quando nasceu
      */
     private String religiaoQuandoNasceu;
-
     /**
      * Data de aceitação de Jesus
      */
     private LocalDate dtAceitacaoJesus;
-
     /**
      * Batizado
      */
     private boolean batizado;
-
     /**
      * Data do batismo
      */
     private LocalDate dtBatismo;
-
     /**
      * Local do batismo
      */
     private String localBatismo;
-
     /**
      * Idade que conheceu Jesus
      */
     private int idadeConheceuJesus;
-
     /**
      * Caso batismo tenha sido na igreja católica
      */
     private boolean batismoCatolico;
-
     /**
      * Verifica se o membro veio de outra igreja
      */
     private boolean veioDeOutraIgreja;
-
     /**
      * Igreja de origem do antigo membro
      */
     private String igrejaOrigem;
-
     /**
      * Cargos exercidos na igreja de origem
      */
     private String cargosExercidosIgrejaOrigem;
-
     /**
      * Dados da frequencia
      */
     private FrequenciaInfo frequenciaInfo;
-
     /**
      * Dados do dizimo
      */
     private DizimoInfo dizimoInfo;
-
     /**
      * Lista de funcoes exercidas
      */
     private Set<String> listaFuncoesExercidas = new HashSet<>();
-
     /**
      * Lista de funçóes desejadas
      */
     private Set<String> listaFuncoesDesejadas = new HashSet<>();
-
     /**
      * Sugestoes
      */
     private String sugestoes;
+
+    /**
+     * @return ativo
+     */
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    /**
+     * Atribui o campo ativo
+     */
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
 
     /**
      * @return pessoa
@@ -338,6 +340,7 @@ public final class Membro {
     public String toString() {
         final StringBuilder sb = new StringBuilder("Membro{");
         sb.append("id=").append(id);
+        sb.append(", ativo=").append(ativo);
         sb.append(", pessoa=").append(pessoa);
         sb.append(", religiaoQuandoNasceu='").append(religiaoQuandoNasceu).append('\'');
         sb.append(", dtAceitacaoJesus=").append(dtAceitacaoJesus);
