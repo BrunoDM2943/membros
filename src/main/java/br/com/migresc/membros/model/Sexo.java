@@ -1,4 +1,4 @@
-package br.com.migresc.membros;
+package br.com.migresc.membros.model;
 
 /**
  * Created by bruno on 22/01/17.

@@ -1,4 +1,4 @@
-package br.com.migresc.membros;
+package br.com.migresc.membros.model;
 
 import org.springframework.data.annotation.Id;
 

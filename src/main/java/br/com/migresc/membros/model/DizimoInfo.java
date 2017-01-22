@@ -1,4 +1,4 @@
-package br.com.migresc.membros;
+package br.com.migresc.membros.model;
 
 /**
  * Classe criada para manter as informações sobre o dizimo

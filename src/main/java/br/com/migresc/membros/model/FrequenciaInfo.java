@@ -1,4 +1,4 @@
-package br.com.migresc.membros;
+package br.com.migresc.membros.model;
 
 /**
  * Classe para armazendar as informações da frequencia
