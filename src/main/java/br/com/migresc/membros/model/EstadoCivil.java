@@ -1,4 +1,4 @@
-package br.com.migresc.membros;
+package br.com.migresc.membros.model;
 
 /**
  * Created by bruno on 20/01/17.
@@ -19,7 +19,7 @@ public enum EstadoCivil {
      * Construtor
      * @param descricao
      */
-    private EstadoCivil(String descricao) {
+    EstadoCivil(String descricao) {
         this.descricao = descricao;
     }
 

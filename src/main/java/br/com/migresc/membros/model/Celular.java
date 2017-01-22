@@ -1,11 +1,11 @@
-package br.com.migresc.membros;
+package br.com.migresc.membros.model;
 
 /**
- * Classe mapeando um telefone
+ * Classe mapeando um celular
  *
  * Created by bruno on 20/01/17.
  */
-public class Telefone {
+public class Celular {
 
     /**
      * DDD
@@ -22,6 +22,11 @@ public class Telefone {
      */
     private int numero2;
 
+    /**
+     * Operadora
+     */
+    private Operadora operadora;
+
 
     /**
      * Construtor
@@ -29,10 +34,11 @@ public class Telefone {
      * @param numero1
      * @param numero2
      */
-    public Telefone(int ddd, int numero1, int numero2) {
+    public Celular(int ddd, int numero1, int numero2, Operadora operadora) {
         this.ddd = ddd;
         this.numero1 = numero1;
         this.numero2 = numero2;
+        this.operadora = operadora;
     }
 
 
@@ -59,12 +65,20 @@ public class Telefone {
         return numero2;
     }
 
+    /**
+     * @return operadora
+     */
+    public Operadora getOperadora() {
+        return operadora;
+    }
+
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Telefone{");
+        final StringBuilder sb = new StringBuilder("Celular{");
         sb.append("ddd=").append(ddd);
         sb.append(", numero1=").append(numero1);
         sb.append(", numero2=").append(numero2);
+        sb.append(", operadora=").append(operadora);
         sb.append('}');
         return sb.toString();
     }
